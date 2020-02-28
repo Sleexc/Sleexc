@@ -1,0 +1,46 @@
+<html>
+<title>
+  Sleexc
+</title>
+<head>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" href="logo/logo.png" />
+</head>
+<body background="images/background.png">
+  <img class="logo" src="images/mylogo.png" alt="logo">
+
+  <nav>
+    <ul class="nav__links">
+        <li><a href="index.html">Anasayfa</a></li>
+        <li><a href="info.html">Hakkimda</a></li>
+        <li><a href="twitchtv.html">Yayın Izle</a></li>
+        <a class="cta" href="contact.html"><button>Iletisim</button></a>
+    </ul>
+    
+
+</nav>         
+    <body  text="white" >    
+          
+           
+      <header>
+  
+
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 1700 ,
+        height: 720,
+        channel: "sleexc"
+      });
+    </script>
+  
+</body>
+
+</html>
